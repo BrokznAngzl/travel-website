@@ -1,19 +1,18 @@
-
-
 const TravelListComp = (props) => {
-    const place  = props['props'];
+    const place = props['props'];
     console.log(place)
     return (
 
-        <section className="py-10" id="services">
+        <section className="py-10 my-20" id="services">
             <div
-                className="relative flex flex-col items-center max-w-screen-lg px-4 mx-auto md:flex-row sm:px-6 p-8">
-                <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
+                // className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8">
+                className=" flex justify-center w-full px-20">
+                <div className=" flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
                     <div className="text-left" data-aos="zoom-in-up" data-aos-duration="2000">
                         {/*<h2*/}
                         {/*    className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">*/}
 
-                        <h2 className="text-2xl md:text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
+                        <h2 className="text-xs md:text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none">
                             {place['title']}
                             {/*<span className="font-bold text-blue-500"></span>*/}
                             {/*<span className="text-xl font-semibold rounded-full text-blueGray-500">2.0</span>*/}
@@ -24,12 +23,14 @@ const TravelListComp = (props) => {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-left" data-aos-duration="2000">
+                {/*<div className="flex bg-red-50 max-w-lg items-center justify-center rounded-lg shadow-md overflow-hidden" data-aos="fade-left" data-aos-duration="2000">*/}
+                <div className="max-w-xl flex justify-center" data-aos="fade-left" data-aos-duration="2000">
                     <img
                         src={place['src']}
                         alt="AncientBuilding"
-                        className="object-cover rounded-lg shadow-md"/>
+                        className="object-cover rounded-3xl drop-shadow-xl "/>
                 </div>
+
 
             </div>
         </section>

@@ -1,21 +1,22 @@
 import NavBarComp from "../component/NavBarComp";
 import HeroComp from "../component/HeroComp";
 import TopicComp from "../component/TopicComp";
-import CafeData from "../data/CafeAtSkonNakhon"
 import TravelListComp from "../component/TravelListComp";
 import AboutUsComp from "../component/AboutUsComp";
 import FooterComp from "../component/FooterComp";
 
-const CafeAtSakonNakhon = (prop) => {
+import PlaceData from "../data/PlaceData";
+import placeData from "../data/PlaceData";
+
+const TenTravelInSakon = () => {
     return (
         <div>
             <NavBarComp/>
             <HeroComp/>
+            <TopicComp title={placeData.title}
+                       description={PlaceData.topicDescription}/>
 
-            <TopicComp title={CafeData.title}
-                       description={CafeData.topicDescription}/>
-
-            {CafeData.data.map((item, index) => {
+            {PlaceData.data.map((item, index) => {
                 return <TravelListComp key={index} props={item}/>;
             })}
 
@@ -25,4 +26,4 @@ const CafeAtSakonNakhon = (prop) => {
     )
 }
 
-export default CafeAtSakonNakhon
+export default TenTravelInSakon
