@@ -1,6 +1,5 @@
 const TopicComp = (props) => {
     return (
-        <div>
             <div className="py-12 sm:py-24">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center">
@@ -32,7 +31,6 @@ const TopicComp = (props) => {
                     {/*</div>*/}
                 </div>
             </div>
-        </div>
     )
 }
 

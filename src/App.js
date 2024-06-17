@@ -2,12 +2,14 @@ import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import TopTen from './page/TopTen'
+import TenTravelInSakon from './page/TenTravelInSakon'
 import HomePage from './page/HomePage'
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import CafeAtSakonNakhon from "./page/CafeAtSakonNakhon";
 import NakhonPhanomTravel from "./page/NakhonPhanomTravel";
+import PlaceData from "./data/PlaceData";
+import CafeAtSkonNakhon from "./data/CafeAtSkonNakhon";
 
 function App() {
     AOS.init({
@@ -20,10 +22,9 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/top10" element={<TopTen />} />
-                <Route path="/CafeAtSakonNakhon" element={<CafeAtSakonNakhon />} />
+                <Route path={PlaceData.pageID} element={<TenTravelInSakon />} />
+                <Route path={CafeAtSkonNakhon.pageID} element={<CafeAtSakonNakhon />} />
                 <Route path="/nakhonphanomtravel" element={<NakhonPhanomTravel />} />
-                {/*<Route path="/contact" element={<Contact />} />*/}
             </Routes>
         </Router>
 
