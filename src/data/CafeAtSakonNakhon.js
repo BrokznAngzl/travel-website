@@ -1,9 +1,10 @@
-const cafeAtSkonNakhon = {
+const cafeAtSakonNakhon = {
     pageID: 'page-2',
     title: 'รวมคาเฟ่สุดเจ๋งจากสกลนคร',
     prevDescription: 'ไอ้หนุ่มเสื้อเขียวมีคาเฟ่สุดเจ๋งในจังหวัดสกลนครมาแนะนำกัน หากทุกคนพร้อมแล้วล่ะก็มาเริ่มกันได้เลย !',
     topicDescription: 'สวัสดีทุกคนครับ ในช่วงอากาศดีๆ(มั้ง) แบบนี้ถ้าหากอยากพักผ่อนหย่อนใจหลายคนคงมีคำว่าท่องเที่ยวหลุดเข้ามาในหัวกันบ้างซึ่งวันนี้ ไอ้หนุ่มเสื้อเขียวจึงมี 10 สถานที่ท่องเที่ยวในจังหวัด<b> สกลนคร </b>มาแนะนำกัน\n' +
         '                            หากทุกคนพร้อมแล้วล่ะก็ มาเริ่มกันได้เลย !',
+    previewImg: 'https://img.wongnai.com/p/624x0/2021/12/19/5309e2380b1e4575a2f40eaa59dd1a69.jpg',
 
     data: [
         {
@@ -27,4 +28,4 @@ const cafeAtSkonNakhon = {
     ]
 }
 
-export default cafeAtSkonNakhon
+export default cafeAtSakonNakhon

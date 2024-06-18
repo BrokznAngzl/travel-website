@@ -1,10 +1,18 @@
+import {useContext} from "react";
+import {useNavigate} from 'react-router-dom';
+import {PageDataContext} from "../context/PageDataContext";
+
 const ServiceCardComp = (props) => {
-    const redirectTo = () => {
-        window.location.href = `/${props.hrefTo}`;
+    const navigate = useNavigate();
+    const {setPageData} = useContext(PageDataContext);
+
+    const handleRedirect = () => {
+        setPageData(props.pageData);
+        navigate(`/${props.hrefTo}`);
     };
 
     return (
-        <div onClick={redirectTo} className="bg-white rounded-lg shadow-md overflow-hidden"
+        <div onClick={handleRedirect} className="bg-white rounded-lg shadow-md overflow-hidden"
              data-aos={props.aosType} data-aos-duration={props.aosDuration}>
             <img src={props.imgScr} alt="wheat flour grinding" className="w-full h-48 object-cover"/>
             <div className="p-4 text-center">
