@@ -1,15 +1,13 @@
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-import TenTravelInSakon from './page/TenTravelInSakon'
 import HomePage from './page/HomePage'
 
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import CafeAtSakonNakhon from "./page/CafeAtSakonNakhon";
-import NakhonPhanomTravel from "./page/NakhonPhanomTravel";
-import PlaceData from "./data/PlaceData";
-import CafeAtSkonNakhon from "./data/CafeAtSkonNakhon";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import JourneyPage from "./page/JourneyPage";
+
+import {PageDataProvider} from "./context/PageDataContext";
+
 
 function App() {
     AOS.init({
@@ -17,17 +15,15 @@ function App() {
         // duration: 1000
     });
 
-
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path={PlaceData.pageID} element={<TenTravelInSakon />} />
-                <Route path={CafeAtSkonNakhon.pageID} element={<CafeAtSakonNakhon />} />
-                <Route path="/nakhonphanomtravel" element={<NakhonPhanomTravel />} />
-            </Routes>
-        </Router>
-
+        <PageDataProvider>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/journey" element={<JourneyPage/>}/>
+                </Routes>
+            </Router>
+        </PageDataProvider>
 
     );
 

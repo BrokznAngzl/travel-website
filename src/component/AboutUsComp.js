@@ -1,4 +1,6 @@
+import Profile from '../profile.JPEG';
 const AboutUsComp = props => {
+
     return(
         <div>
             <section className="mt-8 bg-gray-100" id="aboutus">
@@ -7,24 +9,11 @@ const AboutUsComp = props => {
                         <div className="max-w-lg">
                             <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">About Us</h2>
                             <p className="mt-4 text-gray-600 text-lg">
-                                Bappa flour mill provides our customers with the highest quality products and services.
-                                We offer a
-                                wide variety of flours and spices to choose from, and we are always happy to help our
-                                customers find
-                                the perfect products for their needs.
-                                We are committed to providing our customers with the best possible experience. We offer
-                                competitive
-                                prices, fast shipping, and excellent customer service. We are also happy to answer any
-                                questions
-                                that our customers may have about our products or services.
-                                If you are looking for a flour and spices service business that can provide you with the
-                                highest
-                                quality products and services, then we are the company for you. We look forward to
-                                serving you!</p>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis ducimus error expedita hic illo, iste minus omnis quod totam veritatis, voluptate. Debitis dicta ipsa laboriosam modi voluptas! Eveniet, voluptate!</span><span>A animi cumque delectus, dignissimos error, excepturi hic impedit magni maiores modi molestias natus necessitatibus odio, placeat quod reprehenderit saepe sapiente! Inventore nesciunt quae, quaerat repellat tempora unde ut voluptatum.</span><span>Blanditiis culpa ea est necessitatibus quas recusandae sed. Eveniet pariatur tempore voluptatum! Blanditiis consectetur deleniti eum incidunt ipsa itaque iure maxime obcaecati, quas quis rem tempore totam ullam vitae voluptatibus?</span></p>
                         </div>
-                        <div className="mt-12 md:mt-0">
-                            <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86" alt="About Us Image"
-                                 className="object-cover rounded-lg shadow-md"/>
+                        <div className="mt-12 md:mt-0 flex justify-center items-center">
+                            <img src={Profile} alt="profile image"
+                                 className="object-cover rounded-lg shadow-md size-1/2"/>
                         </div>
                     </div>
                 </div>
