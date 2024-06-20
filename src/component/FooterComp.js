@@ -10,9 +10,12 @@ const FooterComp = () => {
                         </div>
                         <div className="w-full md:w-1/2 md:text-center md:mb-0 mb-8">
                             <ul className="list-reset flex justify-center flex-wrap text-xs md:text-sm gap-3">
-                                <li><a href="#contactUs" className="text-gray-400 hover:text-white">Contact</a></li>
-                                <li className="mx-4"><a href="/privacy" className="text-gray-400 hover:text-white">Privacy
-                                    Policy</a></li>
+                                <li><a href="#contactUs" className="text-gray-400 hover:text-white"
+                                onClick={(e)=>{
+                                    const emailAddress = 'wisarut.hak@ku.th';
+                                    const mailtoUrl = 'mailto:' + encodeURIComponent(emailAddress);
+                                    window.open(mailtoUrl, '_blank')
+                                }}>Contact</a></li>
                             </ul>
                         </div>
                     </div>

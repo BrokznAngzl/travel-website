@@ -1,13 +1,17 @@
-import PlaceData from "./PlaceData";
-import CafeAtSakoNakhon from "./CafeAtSakonNakhon";
+import TopTenTravelInSK from "./TopTenTravelInSK";
+import CafeAtSakoNakhon from "./CafeInSK";
+import TravelForSIngle from "./TravelForSIngle";
+import BKTravel from "./BKTravel";
+import TopKaoKhorView from "./TopKaoKhorView";
+import RainSeasonTravel from "./RainSeasonTravel";
 
 const centralData = [
-    PlaceData,
+    TopTenTravelInSK,
     CafeAtSakoNakhon,
-    CafeAtSakoNakhon,
-    CafeAtSakoNakhon,
-    CafeAtSakoNakhon,
-    CafeAtSakoNakhon,
+    TravelForSIngle,
+    BKTravel,
+    TopKaoKhorView,
+    RainSeasonTravel,
 ]
 
 
