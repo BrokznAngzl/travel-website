@@ -30,7 +30,8 @@ const NavBarComp = (props) => {
                 </div>
 
                 <div className="toggle w-full text-end hidden md:flex md:w-auto px-2 py-2 md:rounded">
-                    <a href="tel:+123">
+                    <a className={"cursor-pointer"}>
+                        {/*href="tel:+123">*/}
                         <div className="flex justify-end">
                             <div
                                 className="flex items-center h-10 w-30 rounded-md bg-[#c8a876] text-white font-medium p-2">

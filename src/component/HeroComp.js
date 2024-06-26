@@ -17,8 +17,12 @@ const HeroComp = () => {
                             มาค้นหา และ ตามไปที่เทียวด้วยกันได้เลย !
                         </p>
                         <a href="#contactUs"
-                           className="px-6 py-3 bg-[#c8a876] text-white font-medium rounded-full hover:bg-[#c09858]  transition duration-200">Contact
-                            Us</a>
+                           className="px-6 py-3 bg-[#c8a876] text-white font-medium rounded-full hover:bg-[#c09858]  transition duration-200"
+                           onClick={(e)=>{
+                               const emailAddress = 'wisarut.hak@ku.th';
+                               const mailtoUrl = 'mailto:' + encodeURIComponent(emailAddress);
+                               window.open(mailtoUrl, '_blank')}}>
+                            Contact Us</a>
                     </div>
                 </div>
             </div>
